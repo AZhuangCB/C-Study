@@ -10,6 +10,8 @@ namespace 秃头.Output
     public class Output_LogFiles
     {
         private static Output_LogFiles _instance;
+        private String m_logfilepath = "";
+        private String m_createtime = "";
         public static Output_LogFiles Instance
         {
             get
@@ -23,24 +25,34 @@ namespace 秃头.Output
         {
             
         }
-        private DateTime todayTimes
+
+        public void create_LogFile(String _path)
         {
-            get { return DateTime.Now; }
+            FileStream fs = new FileStream(_path, FileMode.Create);
+            fs.Close();//解除占用
         }
-        private string logFilePath
+
+        public String CreateTime
         {
-            get { return System.AppDomain.CurrentDomain.BaseDirectory + @"SaveDir"; }
+            get { return m_createtime; }
+            set { m_createtime = value; }
         }
+        public string LogFilePath
+        {
+            get { return m_logfilepath; }
+            set { m_logfilepath = value; }
+        }
+
         /// <summary>
         /// 保存数据data到文件的处理过程；
         /// </summary>
         /// <param name="data"></param>
         public bool writeRecordToLog(string data)
-        {           
-            StreamWriter file = new StreamWriter(this.logFilePath+this.todayTimes.ToString("YYYYMMdd")+".txt",true);
-            file.Write(data);
-            file.Close();
-            file.Dispose();
+        {
+            //StreamWriter file = new StreamWriter(this.logFilePath+this.todayTimes.ToString("YYYYMMdd")+".txt",true)；
+            //file.Write(data);
+            //file.Close();
+            //file.Dispose();
             return true;
         }
 
@@ -51,15 +63,15 @@ namespace 秃头.Output
 
         public void IsExistAndCreateLogFiles()
         {
-            //判断路径是否存在
-            if (!Directory.Exists(logFilePath))
-            {
-                Directory.CreateDirectory(logFilePath);
-            }
-            if (!File.Exists(this.logFilePath + this.todayTimes.ToString("YYYYMMdd") + ".txt"))
-            {
-                File.Create(this.logFilePath + this.todayTimes.ToString("YYYYMMdd") + ".txt");
-            }
+            ////判断路径是否存在
+            //if (!Directory.Exists(logFilePath))
+            //{
+            //    Directory.CreateDirectory(logFilePath);
+            //}
+            //if (!File.Exists(this.logFilePath + this.todayTimes.ToString("YYYYMMdd") + ".txt"))
+            //{
+            //    File.Create(this.logFilePath + this.todayTimes.ToString("YYYYMMdd") + ".txt");
+            //}
         }
     }
 }

@@ -8,3 +8,13 @@ C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.csproj.GenerateResource.ca
 C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.csproj.CoreCompileInputs.cache
 C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.exe
 C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.pdb
+F:\Git\C-Study\秃头\秃头\bin\Debug\秃头.exe.config
+F:\Git\C-Study\秃头\秃头\bin\Debug\秃头.exe
+F:\Git\C-Study\秃头\秃头\bin\Debug\秃头.pdb
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.csproj.AssemblyReference.cache
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.Main.resources
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.Properties.Resources.resources
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.csproj.GenerateResource.cache
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.csproj.CoreCompileInputs.cache
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.exe
+F:\Git\C-Study\秃头\秃头\obj\Debug\秃头.pdb

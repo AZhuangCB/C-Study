@@ -13,10 +13,11 @@ namespace 秃头
 {
     public partial class Main : Form
     {
-        public int hairLossTimes
+        private int m_hairlosstimes;
+        public int HairLossTimes
         {
-            get { return hairLossTimes; }
-            set { hairLossTimes = value; }
+            get { return m_hairlosstimes; }
+            set { m_hairlosstimes = value; }
         }
         public Main( )
         {
@@ -25,12 +26,14 @@ namespace 秃头
 
         private void btn_click_Click(object sender, EventArgs e)
         {
-            hairLossTimes++;
-            string thetime=DateTime.Now.ToString("yyyyMMddHHmmss");
+            m_hairlosstimes++;
+            string thetime = DateTime.Now.ToString("yyyyMMddHHmmss");
+            Hair hair = new Hair(thetime);
+            
             string message1="掉了";
             string message2="根头发！";
-            this.lbl_times.Text = this.hairLossTimes.ToString();
-            string data = thetime+":"+message1 + this.hairLossTimes.ToString() + message2;
+            this.lbl_times.Text = this.m_hairlosstimes.ToString();
+            string data = thetime+":"+message1 + this.m_hairlosstimes.ToString() + message2;
             Output_LogFiles.Instance.writeRecordToLog(data);
         }
 
