@@ -1,0 +1,10 @@
+C:\Users\25184\Desktop\秃头\秃头\bin\Debug\秃头.exe.config
+C:\Users\25184\Desktop\秃头\秃头\bin\Debug\秃头.exe
+C:\Users\25184\Desktop\秃头\秃头\bin\Debug\秃头.pdb
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.csprojAssemblyReference.cache
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.Main.resources
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.Properties.Resources.resources
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.csproj.GenerateResource.cache
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.csproj.CoreCompileInputs.cache
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.exe
+C:\Users\25184\Desktop\秃头\秃头\obj\Debug\秃头.pdb
